@@ -1,0 +1,26 @@
+Approach:
+
+1.Find the URL that you want to scrape
+
+2.Inspecting the Page
+
+3.Find the data you want to extract
+
+4.Run the code and extract the data
+
+5.Store the data in the required format
+ 
+Firstly Get Request URL , then Select the citation content. Scrap citation content from URL .
+
+Parse and Extract all citation information and links.
+
+Filter the collected content using the Keywords.
+
+Save the Scrapped content into a database.
+
+
+We need to find all "img" tags, iterate over them and extract attr "href" from each found object. 
+
+Then you probably need to normalize URL as sometimes people use relative URI to resource (image in this case). 
+
+When you have URL of image you can retrieve it using standard http request and save response to the filesystem as image file.
